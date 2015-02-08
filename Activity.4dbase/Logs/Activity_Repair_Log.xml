@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<verifylog operation="Repair" name="Activity" structure="Macintosh HD:Users:jeffgrann:SuccessWare Development:SuccessWare:Component Development:Activity.4dbase:Activity.4DB" data="" os="Mac OS X (10.9.5)">
+<start_timer time="2015-02-02T14:18:31-05:00"/>
+<step title="Opening the database in maintenance mode">
+	<warning warning_type="1" warning_num="139">Problem on the database : Last database flush did not complete.</warning>
+</step>
+<step title="Repair">
+	<step title="Compacting auto sequence number definitions">
+	</step>
+	<step title="Loading data tables">
+		<step title="Compacting data table headers">
+		</step>
+	</step>
+	<step title="Compacting BLOBs in table Resources">
+	</step>
+	<step title="Compacting records in table Resources">
+	</step>
+	<step title="Compacting BLOBs in table [Table#0]">
+	</step>
+	<step title="Compacting records in table [Table#0]">
+	</step>
+	<step title="Initialization of the resources for the verify operation">
+	</step>
+	<step title="Check Database Methods">
+	</step>
+	<step title="Check Trigger Methods">
+	</step>
+	<step title="Check Project Methods">
+		<step title="_Test">
+			<info>_Test : 4 lines</info>
+		</step>
+		<step title="Activity_SetBarWidthPercentage">
+			<info>Activity_SetBarWidthPercentage : 8 lines</info>
+		</step>
+		<step title="Activity_SetText">
+			<info>Activity_SetText : 8 lines</info>
+		</step>
+		<step title="Activity_SetFontFamily">
+			<info>Activity_SetFontFamily : 8 lines</info>
+		</step>
+		<step title="Activity_SetBackgroundColor">
+			<info>Activity_SetBackgroundColor : 8 lines</info>
+		</step>
+		<step title="Activity_Show">
+			<info>Activity_Show : 6 lines</info>
+		</step>
+		<step title="Activity_Hide">
+			<info>Activity_Hide : 6 lines</info>
+		</step>
+		<step title="SetBackgroundColor">
+			<info>SetBackgroundColor : 6 lines</info>
+		</step>
+		<step title="Activity_Resize">
+			<info>Activity_Resize : 8 lines</info>
+		</step>
+		<step title="Resize">
+			<info>Resize : 8 lines</info>
+		</step>
+		<step title="SetFontFamily">
+			<info>SetFontFamily : 6 lines</info>
+		</step>
+		<step title="SetText">
+			<info>SetText : 6 lines</info>
+		</step>
+		<step title="SetBarWidthPercentage">
+			<info>SetBarWidthPercentage : 6 lines</info>
+		</step>
+		<step title="Show">
+			<info>Show : 2 lines</info>
+		</step>
+		<step title="Hide">
+			<info>Hide : 2 lines</info>
+		</step>
+		<info>15 project methods</info>
+	</step>
+	<step title="Check Project Forms">
+		<step title="Test">
+			<step title="Test">
+				<info>Test : 6 lines</info>
+			</step>
+			<step title="Test.Page1.Button1 (Button1)">
+				<info>Test.Page1.Button1 (Button1) : 2 lines</info>
+			</step>
+			<step title="Test.Page1.Button2 (Button1)">
+				<info>Test.Page1.Button2 (Button1) : 2 lines</info>
+			</step>
+			<step title="Test.Page1.Button3 (Button1)">
+				<info>Test.Page1.Button3 (Button1) : 2 lines</info>
+			</step>
+			<step title="Test.Page1.Button4 (Button1)">
+				<info>Test.Page1.Button4 (Button1) : 2 lines</info>
+			</step>
+			<step title="Test.Page1.Button5 (Button1)">
+				<info>Test.Page1.Button5 (Button1) : 2 lines</info>
+			</step>
+			<step title="Test.Page1.Button6 (Button1)">
+				<info>Test.Page1.Button6 (Button1) : 2 lines</info>
+			</step>
+		</step>
+		<step title="Activity_Subform">
+			<step title="Activity_Subform">
+				<info>Activity_Subform : 1 lines</info>
+			</step>
+			<step title="Activity_Subform.Page1.Activity_WebArea">
+				<info>Activity_Subform.Page1.Activity_WebArea : 6 lines</info>
+			</step>
+		</step>
+		<info>2 project forms</info>
+	</step>
+	<step title="Check Table Forms">
+		<info>0 table forms</info>
+	</step>
+	<step title="Check Orphan Forms">
+	</step>
+	<step title="Check User and Group information">
+	</step>
+	<step title="Check help tips">
+	</step>
+	<step title="Check the folders of the Explorer">
+		<step title="Trash">
+		</step>
+		<step title="Default Folder">
+		</step>
+		<step title="Default Tables">
+		</step>
+		<step title="Default Forms">
+		</step>
+		<step title="Default Project Methods">
+		</step>
+	</step>
+	<step title="Check menu bars and menus">
+	</step>
+	<step title="Check Lists">
+	</step>
+	<step title="Check Orphan Methods">
+	</step>
+	<step title="Move original">
+<move from="Macintosh HD:Users:jeffgrann:SuccessWare Development:SuccessWare:Component Development:Activity.4dbase:Activity.4DB" to="Macintosh HD:Users:jeffgrann:SuccessWare Development:SuccessWare:Component Development:Activity.4dbase:Replaced Files (Repairing) 2015-02-02 14-18-31:Activity.4DB">
+</move>	</step>
+	<step title="Move the new file to the original location">
+<move from="Macintosh HD:Users:jeffgrann:SuccessWare Development:SuccessWare:Component Development:Activity.4dbase:Replaced Files (Repairing) 2015-02-02 14-18-31:_Activity_compacted.4DB" to="Macintosh HD:Users:jeffgrann:SuccessWare Development:SuccessWare:Component Development:Activity.4dbase:Activity.4DB">
+</move>	</step>
+	<step title="Move original index">
+<move from="Macintosh HD:Users:jeffgrann:SuccessWare Development:SuccessWare:Component Development:Activity.4dbase:Activity.4DIndy" to="Macintosh HD:Users:jeffgrann:SuccessWare Development:SuccessWare:Component Development:Activity.4dbase:Replaced Files (Repairing) 2015-02-02 14-18-31:Activity.4DIndy">
+</move>	</step>
+	<step title="Move the new index file to the original location">
+<move from="Macintosh HD:Users:jeffgrann:SuccessWare Development:SuccessWare:Component Development:Activity.4dbase:Replaced Files (Repairing) 2015-02-02 14-18-31:_Activity_compacted.4DIndy" to="Macintosh HD:Users:jeffgrann:SuccessWare Development:SuccessWare:Component Development:Activity.4dbase:Activity.4DIndy">
+</move>	</step>
+</step>
+<stop_timer time="2015-02-02T14:18:33-05:00" success="false" user_canceled="false"/>
+</verifylog>

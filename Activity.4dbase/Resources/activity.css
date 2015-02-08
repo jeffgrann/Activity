@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+/* Progress indicator animation from: Chris Coyier - http://css-tricks.com/css3-progress-bars/ */
+/* Close box for the Cancel button from: http://enjoycss.com/gallery/shapes/gn#text */
+
+/*********************
+ Progress Meter
+ *********************/
+body,
+html
+{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#container
+{
+	width: 100%;
+	margin: auto;
+	height: 100%;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#progressMeter-text
+{
+	float: left;
+	height: 100%;
+	width: 50%;
+	text-align: right;
+	line-height: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#progressMeter
+{
+	width: 30%;
+	float: left;
+	height: 35%;
+}
+
+#clear
+{
+	clear: both;
+}
+
+.sw-widget-progressMeter
+{
+	height: 100%;
+	position: relative;
+	background: #FFFFFF;
+	border: solid 1px #A9A9A9;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.sw-widget-progressMeter > span
+{
+	display: block;
+	height: 100%;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background-color: #4479CD;
+	position: relative;
+	overflow: hidden;
+}
+
+.sw-widget-progressMeter > span:after,
+.sw-widget-progressMeter-animate > span > span
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-image: 
+ -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(255, 255, 255, .3)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .3)), color-stop(.75, rgba(255, 255, 255, .3)), color-stop(.75, transparent), to(transparent) );
+	background-image: 
+ -webkit-linear-gradient( -45deg, rgba(255, 255, 255, .3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, .3) 75%, transparent 75%, transparent );
+	background-image: 
+ -moz-linear-gradient( -45deg, rgba(255, 255, 255, .3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, .3) 75%, transparent 75%, transparent );
+	background-image: 
+ -ms-linear-gradient( -45deg, rgba(255, 255, 255, .3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, .3) 75%, transparent 75%, transparent );
+	background-image: 
+ -o-linear-gradient( -45deg, rgba(255, 255, 255, .3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, .3) 75%, transparent 75%, transparent );
+	z-index: 1;
+	-webkit-background-size: 35px 35px;
+	-moz-background-size:    35px 35px;
+	background-size:         35px 35px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	overflow: hidden;
+}
+
+.sw-widget-progressMeter-animate > span > span
+{
+	-webkit-animation: move 1s linear infinite;
+	-moz-animation: move 1s linear infinite;
+	-o-animation: move 1s linear infinite;
+	animation: move 1s linear infinite;
+}
+
+.sw-widget-progressMeter-animate > span:after
+{
+	display: none;
+}
+ @-webkit-keyframes 
+move
+{
+ 0% {
+ background-position: 0 0;
+}
+ 100% {
+ background-position: 35px 35px;
+}
+}
+ @-moz-keyframes 
+move
+{
+ 0% {
+ background-position: 0 0;
+}
+ 100% {
+ background-position: 35px 35px;
+}
+}
+ @-o-keyframes 
+move
+{
+ 0% {
+ background-position: 0 0;
+}
+ 100% {
+ background-position: 35px 35px;
+}
+}
+ @keyframes 
+move
+{
+ 0% {
+ background-position: 0 0;
+}
+ 100% {
+ background-position: 35px 35px;
+}
+}
+
+/*********************
+ Cancel Button
+ *********************/
+.cancel-button {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0.75em;
+  height: 0.75em;
+  position: relative;
+  border: none;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  font: normal 20px/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  float: left;
+  background: #bdbdbd;
+}
+
+.cancel-button::before, .cancel-button::after {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0.45em;
+  height: 0.1em;
+  position: absolute;
+  content: "";
+  top: 0.33em;
+  left: 0.155em;
+  border: none;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #ffffff;
+  text-shadow: none;
+}
+
+.cancel-button::before {
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.cancel-button::after {
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
